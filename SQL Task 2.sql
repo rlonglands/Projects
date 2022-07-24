@@ -35,8 +35,8 @@ WHERE MONTH(B.OrderDate) = 12
 UNION
 
 SELECT
-A.PurchaseOrderID,
-A.PurchaseOrderDetailID,
+OrderID = A.PurchaseOrderID,
+OrderDetailID = A.PurchaseOrderDetailID,
 A.OrderQty,
 A.UnitPrice,
 A.LineTotal,
